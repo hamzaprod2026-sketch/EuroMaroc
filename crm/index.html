@@ -1,0 +1,20 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EuroMaroc Travel — Espace entreprise</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/crm.css"></head><body>
+<section id="login-screen" class="login-screen">
+  <form id="login-form" class="login-card">
+    <a class="login-logo" href="../index.html"><span>E</span><b>EUROMAROC<small>ESPACE ENTREPRISE</small></b></a>
+    <div class="login-kicker">ACCÈS SÉCURISÉ · DÉMONSTRATION</div>
+    <h1>Bienvenue dans votre espace admin</h1>
+    <p>Connectez-vous pour gérer les réservations, les clients, les voyages et les circuits.</p>
+    <label for="login-email">Adresse e-mail</label>
+    <input id="login-email" type="email" autocomplete="username" placeholder="admin@euromaroctravel.com" required>
+    <label for="login-password">Mot de passe</label>
+    <input id="login-password" type="password" autocomplete="current-password" placeholder="Votre mot de passe" required>
+    <p id="login-error" class="login-error" aria-live="polite"></p>
+    <button class="login-submit" type="submit">Se connecter <span>↗</span></button>
+    <div class="login-demo"><b>Identifiants de démonstration</b><br>admin@euromaroctravel.com<br>EuroMaroc2026!</div>
+    <a class="back-public" href="../index.html">← Retour au site public</a>
+  </form>
+</section>
+<div id="crm-app" hidden>
+<aside class="sidebar"><a class="logo" href="../index.html"><span>E</span><b>EUROMAROC<small>ESPACE ENTREPRISE</small></b></a><div class="side-label">ESPACE DE TRAVAIL</div><button class="side-link active" data-page="dashboard">▦ <span>Tableau de bord</span></button><button class="side-link" data-page="bookings">▤ <span>Réservations</span><i id="pending-count">2</i></button><button class="side-link" data-page="clients">♙ <span>Clients</span></button><button class="side-link" data-page="tours">✧ <span>Voyages</span></button><button class="side-link" data-page="circuits">⌁ <span>Circuits</span></button><div class="side-bottom"><span class="demo-dot"></span> Mode démonstration<br><a href="../index.html">↗ Voir le site public</a></div></aside><main class="main"><header class="topbar"><div><span class="crumb">EuroMaroc Travel</span><b id="page-title">Tableau de bord</b></div><div class="top-actions"><span class="demo-pill">DONNÉES DE DÉMONSTRATION</span><div class="avatar">EM</div><button id="logout-btn" class="logout-btn" type="button">Déconnexion ↗</button></div></header><section id="view" class="view"></section></main><div id="modal" class="modal hidden"><div class="modal-card"><button class="modal-close" id="close-modal">×</button><div id="modal-content"></div></div></div></div>
+<script src="../js/data.js"></script><script src="crm.js"></script></body></html>
